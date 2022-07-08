@@ -1,4 +1,5 @@
 import heartOutline from './heart-outline.png';
+import home from './home.png';
 import heart from './heart.png';
 import logo from './logo.png';
 import search from './Search.png';
@@ -39,6 +40,7 @@ import loader from './loader.gif';
 import arrow from './arrow.png';
 
 export default {
+  home,
   heartOutline,
   heart,
   logo,

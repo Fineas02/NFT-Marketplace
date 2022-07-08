@@ -24,7 +24,7 @@ const MenuItems = ({ isMobile, active, setActive, setIsOpen }) => {
 
   return (
     <ul className={`list-none flexCenter flex-row ${isMobile && 'flex-col h-full'}`}>
-      {['Explore NFTs', 'Listed NFTs', 'My NFTs'].map((item, i) => (
+      {['Explore Homes', 'Listed Homes', 'My Home'].map((item, i) => (
         <li
           key={i}
           onClick={() => {
@@ -63,7 +63,7 @@ const ButtonGroup = ({ setActive, router }) => {
   ) : (
     <Button
       btnName="Connect"
-      btnType="outline"
+      btnType="primary"
       classStyles="mx-2 rounded-lg"
       handleClick={connectWallet}
     />
@@ -117,8 +117,8 @@ const Navbar = () => {
       <div className="flex flex-1 flex-row justify-start">
         <Link href="/">
           <div className="flexCenter md:hidden cursor-pointer" onClick={() => setActive('Explore NFTs')}>
-            <Image src={images.logo02} objectFit="contain" width={32} height={32} alt="logo" />
-            <p className=" dark:text-white text-nft-black-1 font-semibold text-lg ml-1">CryptoKet</p>
+            <Image src={images.home} objectFit="contain" width={36} height={36} alt="logo" />
+            <p className=" dark:text-white text-nft-black-1 font-semibold text-lg ml-1">HomeStead</p>
           </div>
         </Link>
         <Link href="/">
@@ -129,7 +129,7 @@ const Navbar = () => {
               setIsOpen(false);
             }}
           >
-            <Image src={images.logo02} objectFit="contain" width={32} height={32} alt="logo" />
+            <Image src={images.home} objectFit="contain" width={32} height={32} alt="logo" />
           </div>
         </Link>
       </div>

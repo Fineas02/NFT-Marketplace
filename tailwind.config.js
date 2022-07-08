@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [
+  content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
   ],
@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'baby-blue': '#22d3ee',
         'regal-blue': '#243c5a',
         'nft-dark': '#24252D',
         'nft-gray-1': '#E3E1E3',
